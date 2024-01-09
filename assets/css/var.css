@@ -1,16 +1,33 @@
 :root {
-    
-    
+    color-scheme   : dark light;
+    --font-size    : 16px;
+    --PrimaryFont  : "Poppins", sans-serif;
+    --secondaryFont: "Open Sans", sans-serif;
 }
 
-@media (prefers-color-scheme: dark){
-    :root{
-        --main-color:#210c6e;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --colorPrimary: #55e6a5;
+        --bgColor     : #09101a;
+        --bodyBg      : #02050a;
+        --colorWhite  : #ffffff;
+        --colorBlack  : #02050a;
+        --ratingColor : #ffba08;
+        --bodyColor   : #a2a2a2;
+        --font-color  : #F2F2F2;
+
     }
 }
 
 @media (prefers-color-scheme: light) {
-    :root{
-        --main-color:#64A6E3;
+    :root {
+        --colorPrimary: #025259;
+        --bgColor     : #F4E2DE;
+        --bodyBg      : #E4E3E5;
+        --colorWhite  : #ffffff;
+        --colorBlack  : #02050a;
+        --ratingColor : #ffba08;
+        --bodyColor   : #a2a2a2;
+        --font-color  : #011F26;
     }
 }

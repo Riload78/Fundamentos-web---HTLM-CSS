@@ -11,7 +11,11 @@ h1 {
 
 h2 {
     font-size  : 2em;
-    line-height: 2rem;
+    
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 ul {
@@ -31,8 +35,47 @@ img {
     max-width: 100%;
 }
 
+.container {
+    padding: 0 2rem;
+}
+
+.section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
 .link {
     color: var(--color-link);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex-center {
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack          : center;
+    justify-content        : center;
+    -webkit-align-items    : center;
+    -ms-flex-align         : center;
+    align-items            : center;
+    gap                    : 2rem;
+    @media (max-width:748px){
+        display: block;
+    }
+}
+
+.flex-center {
+
 }
 
 .button {

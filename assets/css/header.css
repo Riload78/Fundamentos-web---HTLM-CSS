@@ -1,5 +1,13 @@
-header {
-    padding                : 1rem;
+.header-wrapper {
+    background-color: var(--bgColor);
+    position        : sticky;
+    top             : 0;
+    z-index:999999;
+}
+
+.header {
+    padding-top            : 0.5rem;
+    padding-bottom         : 0.5rem;
     display                : -webkit-box;
     display                : -moz-box;
     display                : -ms-flexbox;
@@ -11,9 +19,7 @@ header {
     -webkit-align-items    : center;
     -ms-flex-align         : center;
     align-items            : center;
-    background-color: transparent;
-    position: sticky;
-    top:0;
+
 }
 
 .logo {
@@ -30,11 +36,11 @@ header {
 
 }
 
-.logo span{
+.logo span {
     font-size: 2rem;
 }
 
-nav ul {
+.header nav menu {
     display                : -webkit-box;
     display                : -moz-box;
     display                : -ms-flexbox;
@@ -46,7 +52,7 @@ nav ul {
     -webkit-align-items    : center;
     -ms-flex-align         : center;
     align-items            : center;
-    gap:2rem;
+    gap                    : 2rem;
 
 }
 

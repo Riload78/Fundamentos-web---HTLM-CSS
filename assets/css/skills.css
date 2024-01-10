@@ -1,0 +1,82 @@
+.skill-wrapper {
+    background-color: var(--bodyBg);
+}
+
+.skill-wrapper .skill-content {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap    : wrap;
+    flex-wrap        : wrap;
+}
+
+.skill-wrapper .article {
+    border : 2px solid var(--colorBorder);
+    padding: 2rem 4rem;
+}
+
+
+
+.skill-wrapper .article .label {
+    display      : block;
+    margin-bottom: 1rem;
+    position     : relative;
+}
+
+.skill-wrapper .article .label:before {
+    content         : '';
+    width           : 25px;
+    height          : 25px;
+    background-image: url('/assets/images/icons/arrow-badge-right-filled.svg');
+    background-size : cover;
+    display         : block;
+    position        : absolute;
+    left            : -25px;
+    top             : -4px;
+}
+
+.skill-wrapper .article .progress {
+    height            : 1rem;
+    border-radius     : 0;
+    width             : 100%;
+    position          : relative;
+    appearance        : none;
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    border            : none;
+
+}
+
+.skill-wrapper .article .progress:before {
+    content   : attr(value)'%';
+    font-size : 0.8em;
+    position  : absolute;
+    text-align: center;
+    top       : 2px;
+    left      : 0;
+    right     : 0;
+    display   : inline-block;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: var(--bodyColor);
+}
+
+.progress::-webkit-progress-value,
+.progress::-moz-progress-bar {
+    background: var(--colorPrimary);
+}
+
+.process::-webkit-progress-inner-element {
+    background: transparent;
+}
+
+@media (min-width:768px) {
+    .skill-wrapper .article {
+        width: 25%;
+    }
+}
+
+@media (max-width:768px) {
+    .skill-wrapper .article {
+        width: 100%;
+    }
+}

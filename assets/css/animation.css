@@ -12,27 +12,190 @@
     animation-duration       : 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    margin: 0;
+    margin                   : 0;
 }
-
-/* .infinity:nth-child(2){
-    animation-name           : infiniteScroll2;
-    animation-duration       : 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-} */
 
 @keyframes infiniteScroll {
     0% {
-     transform: translateX(0%);
- }
+        transform: translateX(0%);
+    }
 
- 50% {
-     transform: translateX(-50%);
- }
+    50% {
+        transform: translateX(-50%);
+    }
 
- 100% {
-     transform: translateX(-100%);
- }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.code-wrapper {
+
+    position               : absolute;
+    right                  : 0;
+    top                    : 4rem;
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack          : end;
+    justify-content        : flex-end;
+    -webkit-align-items    : flex-end;
+    -ms-flex-align         : end;
+    align-items            : flex-end;
+    width                  : auto;
+    height                 : 300px;
+
+
+}
+
+.code-container {
+    margin: 0 10px 10px;
+
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    -webkit-align-items    : flex-end;
+    -ms-flex-align         : end;
+    align-items            : flex-end;
+    display                : flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack          : end;
+    justify-content        : flex-end;
+
+
+
+}
+
+.code-container p {
+    border-right: .15em solid transparent;
+    display     : inline-block;
+    white-space : nowrap;
+    overflow    : hidden;
+    width       : 0;
+
+}
+
+.about-wrapper {
+    position: relative;
+}
+
+
+/* ANIMATIONS */
+.line1-animation {
+    animation: typing1 2s steps(30) 0s forwards, blink-caret 1s linear 0s 2;
+}
+
+@keyframes typing1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 76%;
+    }
+}
+
+/* The second line has a delay of 2 seconds */
+.line2-animation {
+    margin-left: 2rem;
+    animation  : typing2 1.8s steps(23) 2s forwards, blink-caret 1s linear 2s 2;
+}
+
+@keyframes typing2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+/* The third line has a delay of 3.8 seconds */
+.line3-animation {
+    margin-left: 2rem;
+    animation  : typing3 3s steps(34) 3.8s forwards, blink-caret 1s linear 3.8s 3;
+}
+
+@keyframes typing3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 88%;
+    }
+}
+
+/* The fourth line has a delay of 6.8 seconds + infinite for number of blink repetitions */
+.line4-animation {
+    animation: typing4 0.4s steps(2) 6.8s forwards, blink-caret 1s linear 6.8s infinite;
+}
+
+@keyframes typing4 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5%;
+    }
+}
+
+@keyframes blink-caret {
+
+    20%,
+    80% {
+        border-color: transparent;
+    }
+
+    25%,
+    75% {
+        border-color: orange;
+    }
+}
+
+
+@keyframes aboutAmini {
+    0% {
+        transform        : scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform   : scale(1);
+        -ms-transform    : scale(1);
+        -o-transform     : scale(1);
+    }
+
+    100% {
+        transform        : scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform   : scale(1.1);
+        -ms-transform    : scale(1.1);
+        -o-transform     : scale(1.1);
+    }
+}
+
+
+/* STYLES FOR TEXT COLOR */
+.color-one {
+    color: #49A5A8;
+}
+
+.color-two {
+    color: #FFBC2D;
+}
+
+.color-three {
+    color: #FE5E58;
+}
+
+.color-four {
+    color: #9773C5;
+}
+
+.color-five {
+    color: #CD82AC;
 }

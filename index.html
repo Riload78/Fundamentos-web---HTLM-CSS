@@ -8,37 +8,61 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="/assets/images/logo-web.svg"
-                    alt="Ricardo lópez Alonso">
-                <span>Riload</span>
+        <header class="header-wrapper">
+            <div class="header container">
+                <div class="logo">
+                    <img src="/assets/images/logo-web.svg"
+                        alt="Ricardo lópez Alonso">
+                    <span>Riload</span>
+                </div>
+                <nav class="menu">
+                    <menu>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li>Experiencia</li>
+                        <li>Proyectos</li>
+                    </menu>
+                </nav>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href>Sobre mí</a></li>
-                    <li>Skills</li>
-                    <li>Experiencia</li>
-                    <li>Proyectos</li>
-                </ul>
-            </nav>
         </header>
         <main class="main">
+            <div class="code-wrapper">
+                <div class="code-container">
+                    <code>
+                        <p class="line1-animation"><span
+                                class="color-one">.typewriting-animation
+                            </span><span class="color-two">{</span></p>
+                        <p class="line2-animation"><span
+                                class="color-three">animation:
+                            </span><span>typing</span></p>
+                        <p class="line3-animation"><span class="color-four">3.4s
+                            </span><span class="color-five">steps(35)
+                            </span><span class="color-four">10s </span><span
+                                class="text-values">forwards;</span></p>
+                        <p class="line4-animation"><span
+                                class="color-two">}</span></p>
+                    </code>
+                </div>
+            </div>
             <section class="banner-wrapper parallax-bg">
                 <div class="banner-content parallax-content">
                     <div>
-                        <h1>Ricardo López <span class="link">Front End Developer</span></h1>
+                        <h1>Ricardo López <span class="link">Front End
+                                Developer</span></h1>
                         <button class="button">Descargar CV</button>
                     </div>
                     <h2>
-                        Convierto diseños en código para crear experiencias web envolventes y de alto rendimiento. 
-                        Apasionado por la estética y la usabilidad, mi objetivo es cautivar a los usuarios a través 
-                        de interfaces sofisticadas y funcionales. Impulsado por la combinación perfecta entre creatividad y tecnología.
+                        Convierto diseños en código para crear experiencias web
+                        envolventes y de alto rendimiento.
+                        Apasionado por la estética y la usabilidad, mi objetivo
+                        es cautivar a los usuarios a través
+                        de interfaces sofisticadas y funcionales. Impulsado por
+                        la combinación perfecta entre creatividad y tecnología.
                     </h2>
                 </div>
             </section>
             <section class="claim-wrapper">
-                <ul class="infinity primary">
+                <ul class="infinity">
                     <li>Html</li>
                     <li>CSS</li>
                     <li>Less</li>
@@ -47,9 +71,8 @@
                     <li>React</li>
                     <li>Magento</li>
                     <li>Python</li>
-        
                 </ul>
-                <ul class="infinity secondary">
+                <ul class="infinity">
                     <li>Html</li>
                     <li>CSS</li>
                     <li>Less</li>
@@ -58,9 +81,83 @@
                     <li>React</li>
                     <li>Magento</li>
                     <li>Python</li>
-        
                 </ul>
             </section>
+            <section id="about" class="section about-wrapper">
+                <div class="container">
+                    <div class="about-content flex-center">
+                        <div class="text-wrapper">
+                            <div class="title-wrapper">
+                                <h3 class="link">Sobre mí</h3>
+                                <h2 class="title">Construyendo historias a
+                                    través del diseño e innovaciónn</h2>
+                            </div>
+                            <p>Soy un apasionado por el diseño y la
+                                programación, me encanta fusionar creatividad y
+                                funcionalidad en cada
+                                proyecto que emprendo. </p>
+                            <p> Mi objetivo es impactar a través de interfaces
+                                intuitivas y experiencias de usuario
+                                excepcionales,
+                                mientras construyo soluciones tecnológicas
+                                innovadoras que revolucionen la forma en que
+                                interactuamos
+                                con el mundo digital. </p>
+                            <p>Con cada línea de código que escribo, busco
+                                transmitir una visión única y
+                                cautivadora que evoluciona y se adapta
+                                constantemente al cambiante panorama
+                                tecnológico.
+                                Mi pasión por la programación me impulsa a estar
+                                siempre al tanto de las últimas tendencias y
+                                herramientas, explorando y aprendiendo
+                                continuamente para mantenerme en la vanguardia y
+                                llevar cada proyecto más allá de los límites
+                                convencionales.</p>
+                        </div>
+                        <div class="image-wrapper flex-center">
+                            <img src="/assets/images/perfil.jpg"
+                                alt="Foto Perfil Ricardo López">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="skill" class="section skill-wrapper">
+                <div class="container">
+                    <div class="title-wrapper text-center">
+                        <h3 class="link">SKILLS</h3>
+                        <h2 class="title">Habilidades técnicas y experiencia en desarrollo</h2>
+                    </div>
+                    <div class="skill-content flex-center">
+                        <article class="article">
+                            <label class="label" for="html">HTML</label>
+                            <progress id="html" class="progress" max="100" value="90"></progress>
+                        </article>
+                        <article class="article">
+                            <label class="label" for="css">CSS LESS SASS</label>
+                            <progress id="css" class="progress" max="100" value="80"></progress>
+                        </article>
+                        <article class="article">
+                            <label class="label" for="javascrip">JavaScript</label>
+                            <progress id="javascript" class="progress" max="100" value="70"></progress>
+                        </article>
+                        <article class="article">
+                            <label class="label" for="node">Node</label>
+                            <progress id="node" class="progress" max="100" data-value="" value="40"></progress>
+                        </article>
+                        <article class="article">
+                            <label class="label" for="react">React</label>
+                            <progress id="react" class="progress" max="100" value="80"></progress>
+                        </article>
+                        <article class="article">
+                            <label class="label" for="python">Python</label>
+                            <progress id="python" class="progress" max="100" value="60"></progress>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </body>
 </html>

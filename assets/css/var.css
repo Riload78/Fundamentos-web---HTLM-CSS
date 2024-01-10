@@ -18,6 +18,7 @@
         --font-color    : #F2F2F2;
         --color-link    : #55e6a5;
         --colorBtn      : #02050a;
+        --colorBorder   : #e3e3e310;
 
     }
 }
@@ -35,5 +36,6 @@
         --font-color    : #011F26;
         --color-link    : #025259;
         --colorBtn      : #E4E3E5;
+        --colorBorder   : #02050a;
     }
 }

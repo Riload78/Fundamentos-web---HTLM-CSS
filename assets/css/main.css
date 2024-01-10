@@ -1,18 +1,166 @@
-body{
+body {
     background-color: var(--bgColor);
-    color:var(--font-color);
-    font-family: var(--PrimaryFont);
+    color           : var(--font-color);
+    font-family     : var(--PrimaryFont);
+
 }
 
-h1{
+h1 {
     font-size: 2.5em;
 }
 
-h2{
-    font-size: 2em;
+h2 {
+    font-size  : 2em;
+    line-height: 2rem;
 }
 
-a{
-    color: var(--colorPrimary);
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color          : var(--colorPrimary);
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.link {
+    color: var(--color-link);
+}
+
+.button {
+    background-color       : var(--colorPrimary);
+    border                 : 1px solid var(--colorPrimary);
+    font-size              : 1rem;
+    color                  : var(--colorBtn);
+    padding                : 1rem 2rem;
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack          : justify;
+    justify-content        : space-between;
+    -webkit-align-items    : center;
+    -ms-flex-align         : center;
+    align-items            : center;
+    gap                    : 0.2rem;
+    position               : relative;
+    transition             : all ease 0.5s;
+}
+
+.button:after {
+    content         : '';
+    width           : 20px;
+    height          : 20px;
+    background-image: url('/assets/images/icons/circle-arrow-down-filled.svg');
+    background-size : cover;
+    display         : block;
+    position        : relative;
+    left            : 0;
+    transition      : all ease 0.5s;
+}
+
+.button:hover {
+    background-color: var(--colorHover);
+    border          : 1px solid var(--colorHover);
+    color           : var(--colorWhite);
+    transition      : all ease 0.5s;
+}
+
+.button:hover:after {
+    display   : block;
+    left      : 5px;
+    visibility: initial;
+    opacity   : 1;
+    transition: all ease 0.5s;
+}
+
+.banner-wrapper {
+    background-image       : url('/assets/images/main-banner.png');
+    width                  : 100%;
+    color                  : var(--font-color);
+    overflow               : hidden;
+    display                : block;
+    height                 : 100dvh;
+    clear                  : both;
+    font-size              : 2rem;
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack          : justify;
+    justify-content        : space-between;
+    -webkit-align-items    : center;
+    -ms-flex-align         : center;
+    align-items            : center;
+    gap                    : 3rem;
+    margin                 : 0 auto;
+}
+
+.banner-wrapper h1 span {
+    display  : block;
+    font-size: 2.5rem;
+}
+
+
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    z-index              : -1;
+}
+
+.parallax-content {
+    z-index: 1;
+    padding: 2rem 4rem;
+
+
+}
+
+@media (min-width:768px) {
+    .banner-content {
+        display                : -webkit-box;
+        display                : -moz-box;
+        display                : -ms-flexbox;
+        display                : -webkit-flex;
+        display                : flex;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack          : justify;
+        justify-content        : space-between;
+        -webkit-align-items    : center;
+        -ms-flex-align         : center;
+        align-items            : center;
+        gap                    : 3rem;
+    }
+
+    .banner-wrapper h2 {
+        font-size: 1rem;
+        width    : 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .banner-content {
+        display: block;
+        width  : 100%;
+    }
+
+    .banner-wrapper h2 {
+        font-size: 1rem;
+        width    : 100%;
+    }
+
 }

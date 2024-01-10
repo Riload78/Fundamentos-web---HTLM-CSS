@@ -1,0 +1,14 @@
+.claim-wrapper {
+    background-color       : var(--colorPrimary);
+    color                  : var(--colorSecondary);
+    font-size              : 4.3rem;
+    padding                : 1rem 0;
+    width: 100%;
+    overflow-x: hidden;
+    display : -webkit-box;
+    display : -moz-box;
+    display : -ms-flexbox;
+    display : -webkit-flex;
+    gap:2rem;
+
+}

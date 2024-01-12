@@ -1,19 +1,8 @@
-.skill-wrapper {
-    background-color: var(--bodyBg);
-}
-
 .skill-wrapper .skill-content {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap    : wrap;
     flex-wrap        : wrap;
 }
-
-.skill-wrapper .article {
-    border : 2px solid var(--colorBorder);
-    padding: 2rem 4rem;
-}
-
-
 
 .skill-wrapper .article .label {
     display      : block;

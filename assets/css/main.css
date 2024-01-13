@@ -43,6 +43,16 @@ img {
     padding: 0 2rem;
 }
 
+.special-container {
+    max-width: 1200px;
+    margin   : 0 auto;
+}
+
+.full-content {
+    height: 100dvh;
+
+}
+
 .section {
     padding-top   : 4rem;
     padding-bottom: 4rem;
@@ -58,6 +68,18 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+.flex-left {
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack          : start;
+    justify-content        : flex-start;
+    gap                    : 2rem;
 }
 
 .flex-center {
@@ -79,6 +101,23 @@ img {
     }
 }
 
+.flex-column-center {
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : flex;
+    -webkit-flex-direction : column;
+    -ms-flex-direction     : column;
+    flex-direction         : column;
+    -webkit-justify-content: center;
+    -ms-flex-pack          : center;
+    justify-content        : center;
+    -webkit-align-items    : center;
+    -ms-flex-align         : center;
+    align-items            : center;
+
+}
+
 .grid-center {
     display              : grid;
     grid-auto-columns    : 1fr;
@@ -89,20 +128,21 @@ img {
     align-content        : center;
     justify-items        : center;
     align-items          : center;
-    width: 100%;
+    width                : 100%;
 }
 
-.grid-top{
+.grid-top {
     display              : grid;
     grid-template-rows   : repeat(auto-fit, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap : 0em 2em;
+    gap                  : 0em 2em;
 }
 
-.grid-masonry{
+.grid-masonry {
     display              : grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows   : masonry;
+    gap                  : 2rem;
 }
 
 .button {
@@ -203,15 +243,22 @@ img {
     padding: 2rem 4rem;
 }
 
-.date{
-    border:2px solid var(--colorPrimary);
-    color :var(--colorPrimary);
+.date {
+    border : 2px solid var(--colorPrimary);
+    color  : var(--colorPrimary);
     padding: 1rem 2rem;
     display: inline-flex;
 }
 
 .bg-dark {
     background-color: var(--bodyBg);
+}
+
+.special-title {
+    font-size              : 12rem;
+    font-weight            : 700;
+    margin          : 0;
+    -webkit-text-fill-color: var(--colorPrimary);
 }
 
 @media (min-width:768px) {

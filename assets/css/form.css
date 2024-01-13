@@ -1,0 +1,18 @@
+input,
+textarea{
+    padding: 1.5rem 2rem;
+    border:1px solid var(--colorPrimary);
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+input[type=checkbox]{
+    width: auto;
+}
+
+
+fieldset{
+    border:none;
+    width: 100%;
+    
+}

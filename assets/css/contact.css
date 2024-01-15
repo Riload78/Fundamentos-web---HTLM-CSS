@@ -2,6 +2,15 @@
     background-color: var(--colorSecondary);
     padding: 4rem;
 }
+.contact-items .item{
+     background-color: var(--colorSecondary);
+     padding: 3rem;
+}
+
+.contact-items .item img{
+ 
+
+}
 
 
 @media (min-width:768px) {
@@ -9,6 +18,9 @@
         width: 50%;
     }
     .contact-content .form-wrapper {
+        width: 50%;
+    }
+    .contact-items .item {
         width: 50%;
     }
 }

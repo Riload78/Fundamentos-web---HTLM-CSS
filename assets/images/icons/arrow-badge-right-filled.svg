@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-	<title>arrow-badge-right-filled-svg</title>
-	<style>
-		.s0 { fill: none } 
-		.s1 { fill: #55e6a5;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: .4 } 
-	</style>
-	<path id="Layer" fill-rule="evenodd" class="s0" d="m0 0h24v24h-24z"/>
-	<path id="Layer" class="s1" d="m7 6h-0.1q-0.3 0-0.5 0.2-0.2 0.2-0.3 0.4-0.1 0.3-0.1 0.5 0 0.3 0.2 0.5l3.5 4.4-3.5 4.4q-0.2 0.2-0.2 0.5 0 0.3 0.1 0.5 0.1 0.3 0.4 0.4 0.2 0.2 0.5 0.2h6q0.1 0 0.2 0 0.1-0.1 0.2-0.1 0.1 0 0.2-0.1 0.1-0.1 0.2-0.2l4-5q0.1-0.1 0.1-0.3 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0-0.2-0.1-0.3l-4-5q-0.1-0.1-0.2-0.2-0.1-0.1-0.2-0.1-0.1 0-0.2-0.1-0.1 0-0.2 0z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" /></svg>

@@ -19,8 +19,8 @@
         --color-link    : #55e6a5;
         --colorBtn      : #02050a;
         --colorBorder   : #e3e3e310;
-
     }
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,4 +38,5 @@
         --colorBtn      : #E4E3E5;
         --colorBorder   : #02050a;
     }
+
 }

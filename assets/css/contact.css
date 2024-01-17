@@ -1,14 +1,22 @@
-.form-wrapper{
+.form-wrapper {
     background-color: var(--colorSecondary);
-    padding: 4rem;
-}
-.contact-items .item{
-     background-color: var(--colorSecondary);
-     padding: 3rem;
+    padding         : 4rem;
 }
 
-.contact-items .item img{
- 
+.contact-items {
+    margin-top: 2rem;
+
+}
+
+.contact-items .item {
+    background-color  : var(--colorSecondary);
+    padding           : 3rem;
+}
+
+.contact-items .item .icon {
+    width: 60px;
+    animation         : change auto linear forwards;
+    animation-timeline: view();
 
 }
 
@@ -17,11 +25,12 @@
     .contact-content .text-wrapper {
         width: 50%;
     }
+
     .contact-content .form-wrapper {
         width: 50%;
     }
+
     .contact-items .item {
         width: 50%;
     }
 }
-

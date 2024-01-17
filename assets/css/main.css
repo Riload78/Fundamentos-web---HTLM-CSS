@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 
 body {
     background-color: var(--bgColor);
@@ -294,6 +296,10 @@ img {
     font-weight            : 700;
     margin          : 0;
     -webkit-text-fill-color: var(--colorPrimary);
+}
+
+.footer{
+    padding: 1rem;
 }
 
 

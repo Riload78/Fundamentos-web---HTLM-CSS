@@ -34,6 +34,10 @@
 
 }
 
+.skill-wrapper .icon{
+    width: 60px;
+}
+
 .skill-wrapper .article .progress:before {
     content   : attr(value)'%';
     font-size : 0.8em;

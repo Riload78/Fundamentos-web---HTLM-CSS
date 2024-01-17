@@ -56,4 +56,24 @@
 
 }
 
+.bar {
+    width     : 0;
+    height    : 5px;
+    background: var(--colorPrimary);
+
+    animation         : resize auto linear forwards;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes resize {
+    from {
+        width: 0%
+    }
+
+    /* Se puede omitir */
+    to {
+        width: 100%
+    }
+}
+
 @media (min-width: 640px) {}

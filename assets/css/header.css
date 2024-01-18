@@ -40,7 +40,7 @@
     font-size: 2rem;
 }
 
-.header nav menu {
+.header .nav ul {
     display                : -webkit-box;
     display                : -moz-box;
     display                : -ms-flexbox;
@@ -53,28 +53,72 @@
     -ms-flex-align         : center;
     align-items            : center;
     gap                    : 2rem;
+    position:relative;
 
 }
 
-.header nav menu a:after{
-    content    : '';
-    display   : block;
-    width     : 0;
-    height    : 2px;
-    background: #000;
-    transition: width .3s;
+.nav *{
+    box-sizing: border-box;
+    transition: all .35s ease; 
+}
+.nav li {
+    display   : inline-block;
+    list-style: outside none none;
+    padding    : 0;
 }
 
-.header nav menu a:hover:after {
-    width: 100%;
-    transition: width .3s;
+.nav a {
+    padding        : .5em .8em;
+    color          : var(--colorHover);
+    position       : relative;
+    text-decoration: none;
+
 }
+
+.nav a::before,
+.nav a::after {
+    content   : '';
+    height    : 14px;
+    width     : 14px;
+    position  : absolute;
+    transition: all .35s ease;
+    opacity   : 0;
+}
+
+.nav a::before {
+    content     : '';
+    right       : 0;
+    top         : 0;
+    border-top  : 3px solid var(--colorBorderPrimary);
+    border-right: 3px solid var(--colorBorderSecondary);
+    transform   : translate(-100%, 50%);
+}
+
+.nav a:after {
+    content      : '';
+    left         : 0;
+    bottom       : 0;
+    border-bottom: 3px solid var(--colorBorderSecondary);
+    border-left  : 3px solid var(--colorBorderPrimary);
+    transform    : translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity  : 1;
+}
+
+.nav a:hover {
+    color: var(--colorPrimary);
+}
+
+
 
 .bar {
     width     : 0;
     height    : 5px;
     background: var(--colorPrimary);
-
     animation         : resize auto linear forwards;
     animation-timeline: scroll(root block);
 }

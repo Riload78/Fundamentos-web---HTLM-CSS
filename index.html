@@ -4,7 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color-scheme" content="dark light">
+        <!-- Agregar el favicon -->
         <title>Portfolio</title>
+        <meta property="og:title" content="Ricardo López Portfolio" />
+        <meta property="og:description" content="Front End Developer" />
+        <meta property="og:image" content="https://github.com/Riload78/Fundamentos-web---HTLM-CSS/blob/main/assets/images/main-banner.png?raw=true" />
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
     <body>
@@ -15,14 +21,14 @@
                         alt="Ricardo lópez Alonso">
                     <span>Riload</span>
                 </div>
-                <nav class="menu">
-                    <menu>
+                <nav class="nav">
+                    <ul>
                         <li><a href="#about">Sobre mí</a></li>
                         <li><a href="#skill">Skills</a></li>
                         <li><a href="#experience">Experiencia</a></li>
                         <li><a href="#proyects">Proyectos</a></li>
                         <li><a href="#contact">Contacto</a></li>
-                    </menu>
+                    </ul>
                 </nav>
             </div>
             <div class="bar"></div>
@@ -51,7 +57,7 @@
                     <div>
                         <h1>Ricardo López <span class="link">Front End
                                 Developer</span></h1>
-                        <button class="button">Descargar CV</button>
+                        <a href="/assets/images/cv.pdf" class="button" target="__blank">Descargar CV</a>
                     </div>
                     <h2>
                         Convierto diseños en código para crear experiencias web
@@ -169,7 +175,7 @@
                         </article>
                         <article class="article space">
                             <label class="label" for="node">Node</label>
-                            <progress id="node" class="progress" max="100" data-value="" value="40"></progress>
+                            <progress id="node" class="progress" max="100" value="40"></progress>
                         </article>
                         <article class="article space">
                             <label class="label" for="react">React</label>
@@ -319,11 +325,11 @@
                             <div class="contact-items flex-between">
                                 <div class="item flex-column-center">
                                     <img class="icon" class="icon" src="/assets/images/icons/phone.svg" alt="telefono">
-                                    <h4>636215519</h4>
+                                    <a href="tel:+34636215519">636215519</a>
                                 </div>
                                 <div class="item flex-column-center">
                                     <img class="icon" src="/assets/images/icons/mail.svg" width="50px" alt="email">
-                                    <h4>riload78@gmail.com</h4>
+                                    <a href="mailto:riload78@gmail.com">riload78@gmail.com</a>
                                 </div>
 
                             </div>

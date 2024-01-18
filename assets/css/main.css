@@ -66,6 +66,7 @@ img {
 
 .link {
     color: var(--color-link);
+    font-weight: 400;
 }
 
 .text-center {
@@ -193,15 +194,13 @@ img {
     display                : -ms-flexbox;
     display                : -webkit-flex;
     display                : flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack          : justify;
-    justify-content        : space-between;
     -webkit-align-items    : center;
     -ms-flex-align         : center;
     align-items            : center;
     gap                    : 0.2rem;
     position               : relative;
     transition             : all ease 0.5s;
+    width: fit-content;
 }
 
 .button:after {

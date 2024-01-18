@@ -23,7 +23,7 @@
 }
 
 .skill-wrapper .article .progress {
-    height            : 1rem;
+    height            : 1.4rem;
     border-radius     : 0;
     width             : 100%;
     position          : relative;
@@ -43,23 +43,27 @@
     font-size : 0.8em;
     position  : absolute;
     text-align: center;
-    top       : 2px;
+    top       : 5px;
     left      : 0;
     right     : 0;
     display   : inline-block;
 }
 
-.progress::-webkit-progress-bar {
+::-webkit-progress-bar {
     background-color: var(--bodyColor);
 }
-
-.progress::-webkit-progress-value,
-.progress::-moz-progress-bar {
+::-webkit-progress-inner-element{
+     background-color: var(--colorPrimary);
+}
+::-webkit-progress-value,
+::-moz-progress-bar
+.progress[value]::-webkit-progress-value{
     background-color: var(--colorPrimary);
+    transition: width 300ms ease;
 }
 
 .process::-webkit-progress-inner-element {
-    background-color: transparent;
+    
 }
 
 

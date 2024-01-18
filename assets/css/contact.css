@@ -15,8 +15,6 @@
 
 .contact-items .item .icon {
     width: 60px;
-    animation         : change auto linear forwards;
-    animation-timeline: view();
 
 }
 
@@ -24,6 +22,9 @@
 @media (min-width:768px) {
     .contact-content .text-wrapper {
         width: 50%;
+        position: sticky;
+        position: -webkit-sticky;
+        top:0;
     }
 
     .contact-content .form-wrapper {

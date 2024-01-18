@@ -55,12 +55,13 @@
 
 .progress::-webkit-progress-value,
 .progress::-moz-progress-bar {
-    background: var(--colorPrimary);
+    background-color: var(--colorPrimary);
 }
 
 .process::-webkit-progress-inner-element {
-    background: transparent;
+    background-color: transparent;
 }
+
 
 @media (min-width:768px) {
     .skill-wrapper .article {

@@ -2,8 +2,8 @@
     position:realtive 
 }
 
-input,
-textarea{
+.contact-form input,
+.contact-form textarea{
     padding: 1.5rem 2rem;
     border: 1px solid var(--colorPrimary);
     width: 100%;
@@ -11,51 +11,52 @@ textarea{
     background-color: transparent;
 }
 
-input:focus,
-textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     border:1px solid var(--colorHover);
 }
 
-input:focus-visible,
-textarea:focus-visible{
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible{
     outline:none;
 }
 
-input[type=checkbox],
-input[type=radio]{
+.contact-form input[type=checkbox],
+.contact-form input[type=radio]{
     width: auto;
 }
 
-[type="radio"]:checked,
-[type="radio"]:not(:checked),
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
+.contact-form [type="radio"]:checked,
+.contact-form [type="radio"]:not(:checked),
+.contact-form [type="checkbox"]:checked,
+.contact-form [type="checkbox"]:not(:checked){
     position: absolute;
     left    : -9999px;
 }
 
-[type="radio"]:checked+label,
-[type="radio"]:not(:checked)+label,
-[type="checkbox"]:checked+label,
-[type="checkbox"]:not(:checked)+label {
+.contact-form [type="radio"]:checked+label,
+.contact-form [type="radio"]:not(:checked)+label,
+.contact-form [type="checkbox"]:checked+label,
+.contact-form [type="checkbox"]:not(:checked)+label {
     position    : relative;
     padding-left: 28px;
     cursor      : pointer;
     line-height : 20px;
     display     : inline-block;
     margin-bottom: 1rem;
+    
     transition: all 0.2s;
 }
 
-[type="radio"]:checked+label,
-[type="checkbox"]:checked+label{
+.contact-form [type="radio"]:checked+label,
+.contact-form [type="checkbox"]:checked+label{
     color: var(--colorPrimary);
 }
 
-[type="radio"]:checked+label:before,
-[type="radio"]:not(:checked)+label:before,
-[type="checkbox"]:checked+label:before,
-[type="checkbox"]:not(:checked)+label:before {
+.contact-form [type="radio"]:checked+label:before,
+.contact-form [type="radio"]:not(:checked)+label:before,
+.contact-form [type="checkbox"]:checked+label:before,
+.contact-form [type="checkbox"]:not(:checked)+label:before {
     content      : '';
     position     : absolute;
     left         : 0;
@@ -67,16 +68,17 @@ input[type=radio]{
     margin-right: 5px;
 }
 
-[type="radio"]:checked+label:before,
-[type="radio"]:not(:checked)+label:before{
+.contact-form [type="radio"]:checked+label:before,
+.contact-form [type="radio"]:not(:checked)+label:before{
     border-radius: 100%;
+    border : 1px solid var(--colorPrimary);
 }
 
 
-[type="radio"]:checked+label:after,
-[type="radio"]:not(:checked)+label:after,
-[type="checkbox"]:checked+label:after,
-[type="checkbox"]:not(:checked)+label:after {
+.contact-form [type="radio"]:checked+label:after,
+.contact-form [type="radio"]:not(:checked)+label:after,
+.contact-form [type="checkbox"]:checked+label:after,
+.contact-form [type="checkbox"]:not(:checked)+label:after {
     content           : '';
     width             : 12px;
     height            : 12px;
@@ -84,42 +86,47 @@ input[type=radio]{
     position          : absolute;
     top               : 4px;
     left              : 4px;
-
     -webkit-transition: all 0.2s ease;
     transition        : all 0.2s ease;
 }
 
-[type="radio"]:checked+label:after,
-[type="radio"]:not(:checked)+label:after{
-    border-radius : 100%;
+.contact-form [type="radio"]:checked+label:after,
+.contact-form [type="radio"]:not(:checked)+label:after{
+    border-radius : 50%;
 }
 
-[type="radio"]:not(:checked)+label:after,
-[type="checkbox"]:not(:checked)+label:after {
+.contact-form [type="radio"]:not(:checked)+label:after,
+.contact-form [type="checkbox"]:not(:checked)+label:after {
     opacity          : 0;
     -webkit-transform: scale(0);
     transform        : scale(0);
 }
 
-[type="radio"]:checked+label:after,
-[type="checkbox"]:checked+label:after {
+.contact-form [type="radio"]:checked+label:after,
+.contact-form [type="checkbox"]:checked+label:after {
     opacity          : 1;
     -webkit-transform: scale(1);
     transform        : scale(1);
 }
 
-legend{
+.contact-form legend{
     margin-bottom: 1rem;
 }
 
-.label:hover{
+.contact-form .label:hover{
     color: var(--colorPrimary)!important;
     cursor:pointer;
 
 }
 
-fieldset{
+.contact-form fieldset{
     border:none;
     width: 100%;
     
+}
+
+@media (max-width: 1024px){
+    .action{
+        display: block;
+    }
 }

@@ -56,25 +56,45 @@
      background-color: var(--colorPrimary);
 }
 ::-webkit-progress-value,
-::-moz-progress-bar
+::-moz-progress-bar,
 .progress[value]::-webkit-progress-value{
     background-color: var(--colorPrimary);
-    transition: width 300ms ease;
 }
 
 .process::-webkit-progress-inner-element {
     
 }
 
+.certification.desktop-hidden{
+    border:none;
+    animation        : aboutAmini linear 2s infinite alternate;
+    -webkit-animation: aboutAmini linear 2s infinite alternate;
+}
 
-@media (min-width:768px) {
+
+
+
+@media (min-width:1400px) {
     .skill-wrapper .article {
         width: 25%;
     }
 }
 
-@media (max-width:768px) {
+@media (min-width:1024px) and (max-width:1400px){
+    .skill-wrapper .article {
+        width: 40%;
+    }
+}
+
+@media (max-width:1024px) {
     .skill-wrapper .article {
         width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width:698px){
+    .certification.desktop-hidden{
+        display:none;
     }
 }

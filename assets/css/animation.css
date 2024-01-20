@@ -32,8 +32,7 @@
 .code-wrapper {
 
     position               : absolute;
-    right                  : 0;
-    top                    : 4rem;
+
     display                : -webkit-box;
     display                : -moz-box;
     display                : -ms-flexbox;
@@ -45,10 +44,25 @@
     -webkit-align-items    : flex-end;
     -ms-flex-align         : end;
     align-items            : flex-end;
-    width                  : auto;
-    height                 : 300px;
+    width                  : 340px;
+}
 
+.code-wrapper code p{
+    margin: 0;
+}
 
+@media (min-width:768px) {
+    .code-wrapper{
+        right : 0;
+        top   : 6rem;
+    }
+}
+
+@media (max-width:768px) {
+    .code-wrapper {
+        right: 0;
+        bottom  : 0;
+    }
 }
 
 .code-container {

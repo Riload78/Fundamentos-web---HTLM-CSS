@@ -1,6 +1,5 @@
 .form-wrapper {
     background-color: var(--colorSecondary);
-    padding         : 4rem;
 }
 
 .contact-items {
@@ -10,12 +9,49 @@
 
 .contact-items .item {
     background-color  : var(--colorSecondary);
-    padding           : 3rem;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    position:relative;
+    z-index: 99999;
+}
+
+.contact-items .item a{
+    padding : 2rem;
+    width: 100%;
+}
+
+.contact-items .item::before {
+    content         : "";
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 0;
+    height          : 100%;
+    border:1px solid var(--colorPrimary);
+    transition      : width 0.3s ease-in-out;
+    z-index: -1;
+
+}
+
+.contact-items .item:hover::before {
+    width: 100%;
+}
+
+
+.contact-items .item a{
+    gap:1rem;
 }
 
 .contact-items .item .icon {
-    width: 60px;
+    width: 40px;
 
+}
+
+@media (min-width: 1024px){
+    .form-wrapper{
+        padding: 4rem;
+    }
 }
 
 
@@ -30,8 +66,14 @@
     .contact-content .form-wrapper {
         width: 50%;
     }
+}
 
-    .contact-items .item {
-        width: 50%;
+@media (max-width:768px){
+    .contact-content{
+        display: block;
+    }
+    .form-wrapper{
+        margin-top: 2rem;
+        padding: 4rem 2rem;
     }
 }

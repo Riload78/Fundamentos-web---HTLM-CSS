@@ -17,23 +17,31 @@
         <header class="header-wrapper">
             <div class="header container">
                 <div class="logo">
-                    <img src="/assets/images/logo-web.svg"
-                        alt="Ricardo lópez Alonso">
-                    <span>Riload</span>
+                    <a href="#main">
+                        <img src="/assets/images/logo-web.svg"
+                            alt="Ricardo lópez Alonso">
+                        <span>Riload</span>
+                    </a>
                 </div>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#about">Sobre mí</a></li>
-                        <li><a href="#skill">Skills</a></li>
-                        <li><a href="#experience">Experiencia</a></li>
-                        <li><a href="#proyects">Proyectos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </nav>
+                <div class="toggle-menu">
+                   <input type="checkbox" id="toggle-menu" name="toggle-menu" class="toggle">
+                   <label for="toggle-menu"></label>
+                   <nav class="nav">
+                       <ul>
+                           <li><a href="#about">Sobre mí</a></li>
+                           <li><a href="#skill">Skills</a></li>
+                           <li><a href="#experience">Experiencia</a></li>
+                           <li><a href="#proyects">Proyectos</a></li>
+                           <li><a href="#contact">Contacto</a></li>
+                       </ul>
+                      
+                   </nav>
+                </div>
+               
             </div>
             <div class="bar"></div>
         </header>
-        <main class="main">
+        <main id="main" class="main">
             <div class="code-wrapper">
                 <div class="code-container">
                     <code>
@@ -98,7 +106,7 @@
                             <div class="title-wrapper">
                                 <h3 class="link">Sobre mí</h3>
                                 <h2 class="title">Construyendo historias a
-                                    través del diseño e innovaciónn</h2>
+                                    través del diseño e innovación</h2>
                             </div>
                             <p>Soy un apasionado por el diseño y la
                                 programación, me encanta fusionar creatividad y
@@ -153,6 +161,9 @@
                             <h2>Bootcamp Full Stack Jr. Keepcoding</h2>
                             <a href="https://app.certif-id.com/certificate-view/e3f5323f5d082f1abf02892979a1d5abdbc505d1229e820dd3662ac2d15d8593">Ver detalle</a>
                         </article>
+                        <article class="certification space desktop-hidden">
+                            <img src="/assets/images/about_shapes.png" alt="">
+                        </article> 
                        
                     </div>
                 </div>
@@ -194,7 +205,7 @@
                         <h3 class="link">Experiencia</h3>
                         <h2 class="title">Timeline como desarrollador</h2>
                     </div>
-                    <div class="experience-content grid-top">
+                    <div class="experience-content grid-center">
                         <article class="space experience">
                             <p class="date">09/2016 - Actualidad</p>
                             <h2>Next Ecommerce</h2>
@@ -213,6 +224,9 @@
                             <h2>Magento Desarrollo</h2>
                             <h3 class="link">Front End Developer Magento</h3>
                             <p>Mantenimientos y ebolutivos de ecommerce con Magento</p>
+                        </article> 
+                        <article class="space certification desktop-hidden">
+                            <img src="/assets/images/about_shapes.png" alt="">
                         </article> 
                     </div>
                 </div>
@@ -303,40 +317,38 @@
                                 programación, me encanta fusionar creatividad y
                                 funcionalidad en cada
                                 proyecto que emprendo. </p>
-                            <p> Mi objetivo es impactar a través de interfaces
-                                intuitivas y experiencias de usuario
-                                excepcionales,
-                                mientras construyo soluciones tecnológicas
-                                innovadoras que revolucionen la forma en que
-                                interactuamos
-                                con el mundo digital. </p>
-                            <p>Con cada línea de código que escribo, busco
-                                transmitir una visión única y
-                                cautivadora que evoluciona y se adapta
-                                constantemente al cambiante panorama
-                                tecnológico.
-                                Mi pasión por la programación me impulsa a estar
-                                siempre al tanto de las últimas tendencias y
-                                herramientas, explorando y aprendiendo
-                                continuamente para mantenerme en la vanguardia y
-                                llevar cada proyecto más allá de los límites
-                                convencionales.</p>
+                           
 
-                            <div class="contact-items flex-between">
-                                <div class="item flex-column-center">
-                                    <img class="icon" class="icon" src="/assets/images/icons/phone.svg" alt="telefono">
-                                    <a href="tel:+34636215519">636215519</a>
+                            <div class="contact-items flex-column-center">
+                                 <div class="item flex-column-center">
+                                    <a class="flex-center" href="https://github.com/Riload78" target="__blank">
+                                        <img class="icon" src="/assets/images/icons/brand-github.svg" width="50px" alt="email">
+                                        Github
+                                    </a>
                                 </div>
                                 <div class="item flex-column-center">
-                                    <img class="icon" src="/assets/images/icons/mail.svg" width="50px" alt="email">
-                                    <a href="mailto:riload78@gmail.com">riload78@gmail.com</a>
+                                    <a class="flex-center" href="https://www.linkedin.com/in/ricardolopezalonso/" target="__blank">
+                                        <img class="icon" src="/assets/images/icons/brand-linkedin.svg" width="50px" alt="email">
+                                        Linkedin
+                                    </a>
                                 </div>
-
+                                <div class="item">
+                                    <a class="flex-center" href="tel:+34636215519">
+                                        <img class="icon" class="icon" src="/assets/images/icons/phone.svg" alt="telefono">
+                                        636215519
+                                    </a>
+                                </div>
+                                <div class="item flex-column-center">
+                                    <a class="flex-center" href="mailto:riload78@gmail.com">
+                                        <img class="icon" src="/assets/images/icons/mail.svg" width="50px" alt="email">
+                                        riload78@gmail.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="form-wrapper">
                             <div class="form-content">
-                                <form action="#" method="post" name="contactForm" id="contactForm">
+                                <form action="#" method="post" name="contactForm" id="contactForm" class="contact-form">
                                     <fieldset>
                                         <input type="text" name="name" id="name" placeholder="Nombre" required>
                                     </fieldset>
@@ -377,7 +389,7 @@
                                         <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
                                         <label for="newsletter">Suscribirse a la newsletter</label>
                                     </fieldset>
-                                    <fieldset class="flex-center">
+                                    <fieldset class="action flex-center">
                                         <input type="submit" value="Enviar">
                                         <input type="reset" value="Reestablecer">
                                     </fieldset>

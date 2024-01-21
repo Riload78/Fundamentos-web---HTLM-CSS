@@ -157,6 +157,23 @@ img {
 
 }
 
+.flex-column-bottom {
+    display                : -webkit-box;
+    display                : -moz-box;
+    display                : -ms-flexbox;
+    display                : flex;
+    -webkit-flex-direction : column;
+    -ms-flex-direction     : column;
+    flex-direction         : column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack          : end;
+    justify-content        : flex-end;
+    -webkit-align-items    : center;
+    -ms-flex-align         : center;
+    align-items            : center;
+
+}
+
 .grid-center {
     display              : grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

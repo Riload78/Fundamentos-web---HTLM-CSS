@@ -1,0 +1,41 @@
+.content {
+    padding-bottom: 6rem;
+}
+
+
+@media (min-width:1024px) {
+    .not-found{
+        background-image: url('/assets/images/not-found.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 1200px;
+        margin:0 auto;
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width:768px) {
+    .not-found {
+        background-image : url('/assets/images/not-found-tablet.png');
+        background-size  : 100%;
+        background-repeat: no-repeat;
+        max-width        : 768px;
+        margin           : 0 auto;
+    }
+}
+
+@media (max-width: 768px){
+    .not-found {
+        background-image : url('/assets/images/not-found-mobile.png');
+        background-size  : 100%;
+        background-repeat: no-repeat;
+        max-width        : 400px;
+        margin           : 0 auto;
+    }
+
+    .content {
+        padding-bottom: 10rem;
+        text-align: center;
+    }
+}
+

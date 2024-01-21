@@ -10,7 +10,7 @@
     padding-bottom : 0.5rem;
 }
 
-.logo {
+.logo a{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

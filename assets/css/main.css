@@ -384,6 +384,20 @@ img {
         width    : 100%;
     }
 
+    .footer .copy{
+        text-align: center;
+    }
+
+    .footer .rrss .flex-center{
+        display     : -webkit-box;
+        display     : -moz-box;
+        display     : -ms-flexbox;
+        display     : -webkit-flex;
+        display     : flex;
+        align-items : center;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width:650px) {

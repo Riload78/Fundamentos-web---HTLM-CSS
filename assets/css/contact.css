@@ -2,6 +2,12 @@
     background-color: var(--colorSecondary);
 }
 
+.contact-content{
+    overflow: initial;
+}
+
+
+
 .contact-items {
     margin-top: 2rem;
 

@@ -32,7 +32,6 @@
 .code-wrapper {
 
     position               : absolute;
-
     display                : -webkit-box;
     display                : -moz-box;
     display                : -ms-flexbox;
@@ -45,16 +44,25 @@
     -ms-flex-align         : end;
     align-items            : flex-end;
     width                  : 340px;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    opacity: 0.2;
+    z-index:-1
 }
+
 
 .code-wrapper code p{
     margin: 0;
+    font-size: 3.5rem;
 }
 
 @media (min-width:768px) {
     .code-wrapper{
         right : 0;
-        top   : 6rem;
+        top   : 1rem;
     }
 }
 
@@ -108,13 +116,13 @@
     }
 
     to {
-        width: 76%;
+        width: 100%;
     }
 }
 
 /* The second line has a delay of 2 seconds */
 .line2-animation {
-    margin-left: 2rem;
+    padding-left: 5rem;
     animation  : typing2 1.8s steps(23) 2s forwards, blink-caret 1s linear 2s 2;
 }
 
@@ -124,13 +132,14 @@
     }
 
     to {
-        width: 55%;
+        width: 100%;
     }
 }
 
 /* The third line has a delay of 3.8 seconds */
 .line3-animation {
-    margin-left: 2rem;
+
+    padding-left: 5rem;
     animation  : typing3 3s steps(34) 3.8s forwards, blink-caret 1s linear 3.8s 3;
 }
 
@@ -140,7 +149,7 @@
     }
 
     to {
-        width: 88%;
+        width: 100%;
     }
 }
 

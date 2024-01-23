@@ -62,9 +62,6 @@ img {
     padding-bottom: 4rem;
 }
 
-.title {
-    font-size: 3rem;
-}
 
 .link {
     color: var(--color-link);
@@ -321,6 +318,26 @@ img {
     padding: 1rem;
 }
 
+.color-one {
+    color: #49A5A8;
+}
+
+.color-two {
+    color: #FFBC2D;
+}
+
+.color-three {
+    color: #FE5E58;
+}
+
+.color-four {
+    color: #9773C5;
+}
+
+.color-five {
+    color: #CD82AC;
+}
+
 
 @media (prefers-color-scheme: light) {
     .icon{
@@ -363,6 +380,9 @@ img {
         font-weight: 400;
         line-height: 1.5rem;
     }
+    .title {
+        font-size: 3rem;
+    }
     
 }
 
@@ -383,6 +403,9 @@ img {
     .banner-wrapper h2 {
         font-size: 1rem;
         width    : 100%;
+    }
+    .title {
+        font-size: 2rem;
     }
 
     .footer .copy{
@@ -408,3 +431,13 @@ img {
         align-items        : flex-start;
     }
 }
+
+@media (max-width:540px) {
+   .banner-wrapper {
+        -webkit-align-items: flex-end;
+        -ms-flex-align     : end;
+        align-items        : flex-end;
+        padding-bottom: 4rem;
+    }
+}
+

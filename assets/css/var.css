@@ -21,6 +21,8 @@
         --colorBorder   : #e3e3e310;
         --colorBorderPrimary : #4cc28d;
         --colorBorderSecondary : #2b8059;
+        --colorError : tomato;
+        --colorValid:#2b8059;
     }
 
 }
@@ -41,6 +43,8 @@
         --colorBorder   : #02050a;
         --colorBorderPrimary : #1a1f26;
         --colorBorderSecondary : #3a4048;
+        --colorError : tomato;
+         --colorValid:#2b8059;
     }
 
 }

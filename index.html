@@ -350,13 +350,13 @@
                             <div class="form-content">
                                 <form action="#" method="post" name="contactForm" id="contactForm" class="contact-form">
                                     <fieldset>
-                                        <input type="text" name="name" id="name" placeholder="Nombre" required>
+                                        <input class="form-input" type="text" name="name" id="name" placeholder="Nombre" required>
                                     </fieldset>
                                     <fieldset>
-                                        <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
+                                        <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
                                     </fieldset>
                                     <fieldset>
-                                        <input type="tel" name="phone" id="phone" placeholder="Teléfono" required>
+                                        <input class="form-input" type="tel" name="phone" id="phone" placeholder="Teléfono" required>
                                     </fieldset>
                                     <fieldset>
                                         <legend>
@@ -380,13 +380,13 @@
                                         </div>
                                     </fieldset>
                                     <fieldset>
-                                        <input type="text" id="githubTag" name="githubTag" pattern="^@[^\s]+" placeholder="Github" required>
+                                        <input class="form-input" type="text" id="githubTag" name="githubTag" pattern="^@[^\s]+" placeholder="Github" required>
                                     </fieldset>
                                     <fieldset>
-                                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                                        <textarea class="form-input form-input--textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                                     </fieldset>
                                     <fieldset class="flex-left">
-                                        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                                        <input class="form-input" type="checkbox" id="newsletter" name="newsletter" value="newsletter">
                                         <label for="newsletter">Suscribirse a la newsletter</label>
                                     </fieldset>
                                     <fieldset class="action flex-center">

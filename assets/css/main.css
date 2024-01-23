@@ -438,14 +438,11 @@ img {
         -webkit-align-items: flex-end;
         -ms-flex-align     : end;
         align-items        : flex-end;
-        padding-bottom: 4rem;
-    }
-    .banner-content{
-         margin-top: 120px;
+        padding-bottom: 2rem;
     }
 
     .banner-content h1{
-        font-size: 2em;
+        font-size: 1.6em;
     }
 }
 

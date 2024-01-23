@@ -222,7 +222,7 @@ img {
     content         : '';
     width           : 20px;
     height          : 20px;
-    background-image: url('./assets/images/icons/circle-arrow-down-filled.svg');
+    background-image: url('../images/icons/circle-arrow-down-filled.svg');
     background-size : cover;
     display         : block;
     position        : relative;
@@ -246,7 +246,7 @@ img {
 }
 
 .banner-wrapper {
-    background-image       : url('./assets/images/main-banner.png');
+    background-image       : url('../images/main-banner.png');
     width                  : 100%;
     color                  : var(--font-color);
     overflow               : hidden;

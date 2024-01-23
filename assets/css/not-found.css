@@ -26,7 +26,7 @@
 
 @media (min-width:1024px) {
     .not-found{
-        background-image: url('./assets/images/not-found.png');
+        background-image: url('../images/not-found.png');
         background-size: 100%;
         background-repeat: no-repeat;
         max-width: 1200px;
@@ -37,7 +37,7 @@
 
 @media (max-width: 1024px) and (min-width:768px) {
     .not-found {
-        background-image : url('./assets/images/not-found-tablet.png');
+        background-image : url('../images/not-found-tablet.png');
         background-size  : 100%;
         background-repeat: no-repeat;
         max-width        : 768px;
@@ -47,7 +47,7 @@
 
 @media (max-width: 768px){
     .not-found {
-        background-image : url('./assets/images/not-found-mobile.png');
+        background-image : url('../images/not-found-mobile.png');
         background-size  : 100%;
         background-repeat: no-repeat;
         max-width        : 400px;

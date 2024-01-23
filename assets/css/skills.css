@@ -16,7 +16,7 @@
     content         : '';
     width           : 25px;
     height          : 25px;
-    background-image: url('/assets/images/icons/arrow-badge-right-filled.svg');
+    background-image: url('./assets/images/icons/arrow-badge-right-filled.svg');
     background-size : cover;
     display         : block;
     position        : absolute;

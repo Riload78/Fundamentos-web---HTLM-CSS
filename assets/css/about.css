@@ -4,7 +4,7 @@
 
 .about-content .image-wrapper:before {
     content            : '';
-    background-image   : url('/assets/images/about_shapes.png');
+    background-image   : url('./assets/images/about_shapes.png');
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;

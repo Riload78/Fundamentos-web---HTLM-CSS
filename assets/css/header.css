@@ -199,7 +199,19 @@
     width           : 50px;
     height          : 50px;
     display         : block;
-    filter          : invert(79%) sepia(14%) saturate(1471%) hue-rotate(98deg) brightness(97%) contrast(92%);
+    
+}
+
+@media (prefers-color-scheme: light) {
+    .toggle-menu label:before {
+        filter: invert(23%) sepia(40%) saturate(1479%) hue-rotate(144deg) brightness(96%) contrast(102%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .toggle-menu label:before{
+        filter : invert(79%) sepia(14%) saturate(1471%) hue-rotate(98deg) brightness(97%) contrast(92%);
+    }
 }
 
 
@@ -213,5 +225,3 @@
         width: 100%
     }
 }
-
-@media (min-width: 640px) {}

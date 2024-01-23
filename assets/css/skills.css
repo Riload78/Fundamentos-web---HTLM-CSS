@@ -4,7 +4,9 @@
     flex-wrap        : wrap;
 }
 
-
+.skill-wrapper .container.section{
+    padding-bottom: 0;
+}
 
 .skill-wrapper .article .range__label {
     display      : block;
@@ -65,7 +67,7 @@
 
 .range:after {
     counter-reset: progress var(--p);
-    content      : counter(progress) "%";
+    content      : '';
     width: 100%;
     color        : var(--colorWhite);
     position     : absolute;
@@ -125,6 +127,10 @@
     .skill-wrapper .article {
         width: 100%;
         margin-bottom: 2rem;
+    }
+    .skill-content{
+        max-width: 600px;
+        margin:0 auto;
     }
 }
 

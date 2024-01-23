@@ -31,8 +31,7 @@
 
 .code-wrapper {
     position: absolute;
-    opacity: 0.2;
-    z-index:-1;
+    
 }
 
 .code-container {
@@ -189,5 +188,17 @@
     }
 }
 
+@media (prefers-color-scheme: light) {
+    .code-wrapper {
+        opacity: 0.5;
+        z-index: 2;
+    }
+}
 
+@media (prefers-color-scheme: dark) {
+    .code-wrapper {
+        opacity : 0.2;
+        z-index:-1;
+    }
+}
 

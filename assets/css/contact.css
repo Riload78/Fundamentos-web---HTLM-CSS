@@ -80,6 +80,12 @@
     }
     .form-wrapper{
         margin-top: 2rem;
-        padding: 4rem 2rem;
+        padding: 4rem 1rem;
     }
+    .contact-items .item a{
+       display: flex; 
+    }
+    .contact-items .item .email {
+        font-size: 1.5rem;
+    }   
 }

@@ -440,5 +440,12 @@ img {
         align-items        : flex-end;
         padding-bottom: 4rem;
     }
+    .banner-content{
+         margin-top: 80px;
+    }
+
+    .banner-content h1{
+        font-size: 2em;
+    }
 }
 

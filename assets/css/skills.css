@@ -4,13 +4,15 @@
     flex-wrap        : wrap;
 }
 
-.skill-wrapper .article .label {
+
+
+.skill-wrapper .article .range__label {
     display      : block;
     margin-bottom: 1rem;
     position     : relative;
 }
 
-.skill-wrapper .article .label:before {
+.skill-wrapper .article .range__label:before {
     content         : '';
     width           : 25px;
     height          : 25px;
@@ -19,59 +21,92 @@
     display         : block;
     position        : absolute;
     left            : -25px;
-    top             : -4px;
+    top             : -2px;
+    filter: invert(79%) sepia(14%) saturate(1471%) hue-rotate(98deg) brightness(97%) contrast(92%);
 }
 
-.skill-wrapper .article .progress {
-    height            : 1.4rem;
-    border-radius     : 0;
-    width             : 100%;
-    position          : relative;
-    appearance        : none;
-    -webkit-appearance: none;
-    -moz-appearance   : none;
-    border            : none;
+.skill-content:hover .range:after{
+    --width          : calc(var(--p) * 1%);
+    position         : absolute;
+    color : var(--colorSecondary);
+    top              : 50%;
+    line-height: 1.5;
+    left             : 0;
+    width            : 0;
+    height           : 100%;
+    background-color : var(--colorPrimary);
+    z-index          : 0;
+    -webkit-animation: load 0.7s forwards ease-in;
+    animation        : load 0.7s forwards ease-in;
+}
+
+
+.range {
+    position        : relative;
+    background-color: var(--colorHover);
+    width           : 100%;
+    height          : 22px;
+}
+
+.range:before {
+    --width          : calc(var(--p) * 1%);
+    content          : "";
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+    width            : 0;
+    height           : 100%;
+    background-color : var(--colorPrimary);
+    opacity:0.3;
+    z-index          : 0;
+    -webkit-animation: load 1s forwards ease-in;
+    animation        : load 1s forwards ease-in;
+}
+
+.range:after {
+    counter-reset: progress var(--p);
+    content      : counter(progress) "%";
+    width: 100%;
+    color        : var(--colorWhite);
+    position     : absolute;
+    left         : 0;
+    top          : 50%;
+    transform    : translateY(-50%) ;
+    z-index      : 1;
 
 }
 
-.skill-wrapper .icon{
-    width: 60px;
+.range:hover:after {
+    width: var(--width);
 }
 
-.skill-wrapper .article .progress:before {
-    content   : attr(value)'%';
-    font-size : 0.8em;
-    position  : absolute;
-    text-align: center;
-    top       : 5px;
-    left      : 0;
-    right     : 0;
-    display   : inline-block;
+.range__label {
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
-::-webkit-progress-bar {
-    background-color: var(--bodyColor);
-}
-::-webkit-progress-inner-element{
-     background-color: var(--colorPrimary);
-}
-::-webkit-progress-value,
-::-moz-progress-bar,
-.progress[value]::-webkit-progress-value{
-    background-color: var(--colorPrimary);
+@-webkit-keyframes load {
+    to {
+        width: var(--width);
+    }
 }
 
-.process::-webkit-progress-inner-element {
-    
+@keyframes load {
+    to {
+        width: var(--width);
+    }
 }
+
+.certification .icon{
+    width: 4rem;
+}
+
 
 .certification.desktop-hidden{
     border:none;
     animation        : aboutAmini linear 2s infinite alternate;
     -webkit-animation: aboutAmini linear 2s infinite alternate;
 }
-
-
 
 
 @media (min-width:1400px) {

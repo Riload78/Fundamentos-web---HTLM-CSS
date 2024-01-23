@@ -293,7 +293,7 @@ img {
 
 .space {
     border : 2px solid var(--colorBorder);
-    padding: 2rem 4rem;
+    padding: 2rem;
 }
 
 .date {
